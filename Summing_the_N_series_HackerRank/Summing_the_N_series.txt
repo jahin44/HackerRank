@@ -1,0 +1,24 @@
+#include<bits/stdc++.h> 
+using namespace std;
+
+
+int main(){
+unsigned long long int a,b,c ,d;
+int n;
+cin>>n;
+if (n<=10 && n>=1){
+  for (int i=0;i<n;i++){
+    cin>>a;
+    if (a>=1){
+     a =a%1000000007;
+     b = a*a % 1000000007;
+    
+     cout <<b<<endl;
+     }
+
+  }
+}
+
+
+    return 0;
+}

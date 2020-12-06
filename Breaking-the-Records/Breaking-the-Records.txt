@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+ 
+int main(){
+     int n,j,mic=0,mxc=0;
+     cin>>n;
+     long int ar[n], min ,max;
+     for(int i=0;i<n;i++){
+       cin >>ar[i];
+     }
+    min=max=ar[0];
+    
+    for(int i=1;i<n;i++){
+      if(ar[i]>max){
+        mxc++;
+        max=ar[i];
+      }
+      else if (ar[i]< min){
+           mic++;
+           min=ar[i];
+      }
+      else { }
+    }
+    cout<<mxc<<" "<<mic;
+
+    
+ 
+   
+     return 0;
+     }
